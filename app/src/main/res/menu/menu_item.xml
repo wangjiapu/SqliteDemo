@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/in"
+        android:title="插入数据"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item android:id="@+id/dele"
+        android:title="删除数据"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item android:id="@+id/updata"
+        android:title="修改数据"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item android:id="@+id/sel"
+        android:title="查询数据"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/list_menu"
+        android:title="查询数据并展示"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item android:id="@+id/call"
+        android:title="电话"
+        android:orderInCategory="100"
+        app:showAsAction="always"/>
+
+</menu>
