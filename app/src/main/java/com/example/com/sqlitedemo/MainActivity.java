@@ -29,6 +29,12 @@ import com.example.com.sqlitedemo.utils.MySqliteHelper;
 
 import java.util.List;
 
+import static com.example.com.sqlitedemo.LitePal_model.LpUtils.lpCreate_db;
+import static com.example.com.sqlitedemo.LitePal_model.LpUtils.lpDel_db;
+import static com.example.com.sqlitedemo.LitePal_model.LpUtils.lpInsert_db;
+import static com.example.com.sqlitedemo.LitePal_model.LpUtils.lpShow_db;
+import static com.example.com.sqlitedemo.LitePal_model.LpUtils.lpUpdate_db;
+
 
 public class MainActivity extends AppCompatActivity
         implements Toolbar.OnMenuItemClickListener {
@@ -178,6 +184,26 @@ public class MainActivity extends AppCompatActivity
                 break;
             case R.id.call:
                 call_permissions();
+                break;
+            case R.id.lp_create:
+                if (lpCreate_db()==null){
+                    Toast.makeText(con,"lp-失败",Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    Toast.makeText(con,"lp-成功",Toast.LENGTH_SHORT).show();
+                }
+                break;
+            case R.id.lp_insert:
+                lpInsert_db();
+                break;
+            case R.id.lp_del:
+                lpDel_db();
+                break;
+            case R.id.lp_show:
+                textView.setText(lpShow_db());
+                break;
+            case R.id.lp_update:
+                lpUpdate_db();
                 break;
         }
         return true;

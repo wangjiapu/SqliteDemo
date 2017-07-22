@@ -27,4 +27,26 @@
         android:orderInCategory="100"
         app:showAsAction="always"/>
 
+    <item android:id="@+id/lp_create"
+        android:title="lp创建数据库"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item android:id="@+id/lp_insert"
+        android:title="lp插入数据"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item android:id="@+id/lp_del"
+        android:title="lp删除数据"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+    <item android:id="@+id/lp_update"
+        android:title="lp修改数据"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
+    <item android:id="@+id/lp_show"
+        android:title="lp查询数据"
+        android:orderInCategory="100"
+        app:showAsAction="never"/>
+
 </menu>

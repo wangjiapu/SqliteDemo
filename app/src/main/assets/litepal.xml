@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<litepal>
+    <dbname value="BookStore">
+    </dbname>
+    <version value="2">
+    </version>
+    <list>
+        <mapping class="com.example.com.sqlitedemo.LitePal_model.Book">
+        </mapping>
+        <mapping class="com.example.com.sqlitedemo.LitePal_model.Category">
+        </mapping>
+    </list>
+</litepal>

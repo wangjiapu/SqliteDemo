@@ -14,6 +14,7 @@ import com.example.com.sqlitedemo.utils.Constant;
 
 /**
  * Created by 蒲家旺 on 2017/7/21.
+ * Contenprovider的使用
  */
 
 public class MyContentProvider extends ContentProvider {
